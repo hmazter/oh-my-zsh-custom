@@ -19,11 +19,4 @@ _deployer () {
     fi
 }
 
-#compdef _deployer deployer
 compdef _deployer dep
-
-
-#compdef _deployer_servers `./bin/dep deploy `
-
-#Alias
-#alias dep='deployer'
