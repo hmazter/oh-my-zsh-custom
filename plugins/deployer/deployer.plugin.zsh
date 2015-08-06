@@ -8,7 +8,7 @@ _deployer_get_command_list () {
 }
 
 _deployer_get_servers () {
-	cat servers.yml | awk '/^[a-zA-Z]+/ { print $1 }'
+	cat servers.yml | awk '/^[a-zA-Z]+/ { print $1 }' | tr ":" " "
 }
 
 _deployer () {
