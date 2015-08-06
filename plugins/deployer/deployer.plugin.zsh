@@ -20,7 +20,7 @@ _deployer () {
 }
 
 #compdef _deployer deployer
-compdef _deployer `./bin/dep`
+compdef _deployer dep
 
 
 #compdef _deployer_servers `./bin/dep deploy `
