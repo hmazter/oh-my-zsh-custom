@@ -1,5 +1,5 @@
 _deployer_bin () {
-  echo "php $(find . -maxdepth 3 -mindepth 1 -name 'dep' | head -n 1)"
+  echo "php $(find . -maxdepth 3 -mindepth 1 -name 'deployer.phar' | head -n 1)"
 }
 
 # Deployer basic command completion
@@ -19,4 +19,4 @@ _deployer () {
     fi
 }
 
-compdef _deployer dep
+compdef _deployer deployer.phar
